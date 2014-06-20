@@ -71,3 +71,23 @@ we create new factor - activityPerSubject, by pasting activity and subject toget
   aggregation <- dcast(actMelt,activityPerSubject ~ variable,mean)
   aggregation
 ```
+
+###Variables
+* subject_train: path to a file with subjects of training data
+* subject_test: path to a file with subjects of test data
+* X_train: path to a file with features of training data
+* X_test: path to a file with features of test data
+* y_train: path to a file with activities of training data
+* y_test: path to a file with activities of test data
+* features_file: path to a file with features
+* labels_file: path to a file with labels of activity
+* columns: vector of columns to subset from binded data frame
+* names: vector of names for columns
+* l: vector of activities labels
+
+###Significant data frames
+* X: features
+* y: lables
+* subject: subjects
+* binded data: X,y,subject binded
+* aggregation: final results
