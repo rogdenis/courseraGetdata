@@ -1,4 +1,7 @@
 make_average <- function(){
+  download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile="data.zip")
+  unzip("data.zip")
+  
   subject_train <- "UCI HAR Dataset/train/subject_train.txt"
   subject_test <- "UCI HAR Dataset/test/subject_test.txt"
 
