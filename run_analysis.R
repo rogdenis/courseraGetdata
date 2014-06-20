@@ -4,15 +4,11 @@ make_average <- function(){
   
   subject_train <- "UCI HAR Dataset/train/subject_train.txt"
   subject_test <- "UCI HAR Dataset/test/subject_test.txt"
-
   X_train <- "UCI HAR Dataset/train/X_train.txt"
   X_test <- "UCI HAR Dataset/test/X_test.txt"
-
   y_train <- "UCI HAR Dataset/train/y_train.txt"
   y_test <- "UCI HAR Dataset/test/y_test.txt"
-
   features_file <- "UCI HAR Dataset/features.txt"
-
   labels_file <- "UCI HAR Dataset/activity_labels.txt"
 
   labels <- read.table(labels_file,sep="")
